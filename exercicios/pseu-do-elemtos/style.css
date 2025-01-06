@@ -1,0 +1,32 @@
+/* 
+    : psudo-class
+    :: pseudo-elemento
+    > filho
+*/
+
+a {
+    color: rgb(20, 61, 243);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: chartreuse;
+}
+
+a:hover {
+    color: black;
+}
+a:active {
+    color: cadetblue;
+}
+
+/* a::after {
+    content: "[link]";
+    color: blueviolet;
+} */
+
+.especial {
+    background-color: blue;
+}
+
