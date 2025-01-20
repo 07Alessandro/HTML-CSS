@@ -17,15 +17,52 @@
             padding: 40px;
             text-align: center;
         }
+        .grupo-nome {
+            position: relative;
+        }
+
+        .grupo-nome label {
+            color: white;
+            padding: 0 5px;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            right: 55%;
+            pointer-events: none;
+            transition: .3s;
+        }
+
+        .grupo-nome input {
+            color: white;
+            border: 2px solid white;
+            background: transparent;
+            border-radius: 5px;
+            width: 150px;
+            height: 30px;
+            padding:0 1rem;
+            outline: none;
+        } 
+
+        .grupo-nome input:focus~label, input:valid~label {
+            top: 0;
+            right: 58%;
+            background-color: rgba(52, 52, 241, 0.699);
+            border-radius: 5px;
+            font-size: 1rem;
+            
+        }
     </style>
 </head>
 <body>
     <h1>Teste de Formulário</h1>
     <form action="" method="get" autocomplete="on">
-        <p>
+
+        <div class="grupo-nome">
+
+            <input type="text" name="nome" id="inome" required maxlength="30"  autocomplete="name">
             <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
-        </p>
+        </div>
+       
         <p>
             <label for="imedia">Média</label>
             <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
