@@ -31,6 +31,7 @@ header h1 {
 #burguer:hover {
     background-color: white;
     color: rgb(41, 40, 40);
+    
 }
 menu {
     display: none;
